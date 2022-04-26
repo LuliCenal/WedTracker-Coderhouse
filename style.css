@@ -1,0 +1,202 @@
+*{margin: 0%;
+padding: 0%;
+}
+
+/* HEADER STYLES */
+/* Barra Navegación */
+nav{
+  width: 100%;
+  height: 80px;
+  justify-content: space-between;
+  position: sticky; /* Duda Tami: esto no me está quedando sticky*/
+  top: 8px;
+  bottom: 8px;
+  display: flex;
+}
+
+nav .logo {
+  width: auto;
+  height: 100%;
+  
+
+}
+
+nav ul {
+  list-style: none;
+  width: 100%;
+  font-weight: 600; /* Duda Tami: No supe bien como usar las google fonts */
+  text-decoration-line: none;
+  display: flex;
+  justify-content: space-around;
+  align-items:center; 
+}
+
+nav ul li a{
+  color: #70866eff ;
+  font-size: 24px;
+  text-decoration-line: none; 
+}
+nav ul li a .current{
+  color: rgb(163, 179, 162) ;
+  font-size: 24px;
+  text-decoration-line: none;  
+}
+/* Duda Tami: quiero que la sección en la que se encuentra el usuario esté en un verde más claro pero no me funciona*/
+
+/* BODY STYLES */
+
+main{
+  background-color:   rgba(163, 179, 162, 0.747) ;
+  padding: 16px;
+  align-content: center;
+}
+
+section .detailText{
+color: #ffffff;
+text-shadow: #808080 4px 0 8px;
+position: absolute;
+text-align: center;
+text-transform: uppercase;
+top: 40%;
+font-size: 40px;
+word-spacing: 8px;
+line-height: 2;
+left: 35%; /*Duda Tami: esta es la manera para centrar el texto o hay otra?*/
+/*background-image: url(./imagenes/inicio.jpeg);
+object-fit: cover;
+width: 100%;
+height: auto; 
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+*/
+}
+
+section .detailImg{
+object-fit: cover;
+width: 100%;
+height: auto; 
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+
+section h3{
+  text-align: center;
+  padding: 8px;
+  font-size: 24px;
+  color: rgb(104, 128, 102);
+}
+
+form {
+  position: center;
+  text-align: left;
+  display: block;
+  width: 100%;
+  font-family: Raleway;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #70866eff;
+  border: none;
+  cursor: pointer;
+  padding-top: 8px;
+  padding-bottom: 16px;
+  padding-left: 35%;
+}
+
+form .question{
+ font-weight: 600;
+}
+
+.gallery{
+  display: flex;
+  width: auto;
+  height: 100%;
+  overflow-x: scroll;
+  height: 560px;
+  width: 100%;
+  max-width: 800px;
+  scroll-snap-type: x mandatory;
+  margin-left: 16px;
+  margin-right: 16px;
+  justify-content: space-between;
+  text-align: center;
+  background-color:   rgba(163, 179, 162, 0.747) ;
+}
+.gallery img{
+  width: 100%;
+  object-fit: cover;
+  scroll-snap-align: center;
+  background-color:   rgba(163, 179, 162, 0.747) ;
+}
+
+main p {
+  width: 100%;
+  object-fit: cover;
+  scroll-snap-align: center;
+  color: #70866eff;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #9fa39e #d1d1d138;
+  }
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #d1d1d17e;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #9fa39e;
+    border-radius: 8px;
+    border: 1px none #262626;
+  }
+
+/* FOOTER STYLES */
+.contact {
+  background-color: rgb(19, 19, 19);
+  color: white;
+  list-style: none;
+  text-align: center;
+  line-height: 24px;
+  width: 100%;
+  padding: 16px;
+}
+.contact p{
+  color: white;
+  size: 8px;
+}
+.contact ul {
+  color: white;
+  list-style: none;
+  display: flex;
+  text-align: center;
+  padding-left: 30%;
+  padding-right: 30%;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  justify-content: space-between;
+  top: 0;
+  display: flex
+}
+
+.contact a {
+  color: white;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-decoration: none;
+  top: 0;
+  display: flex;
+}
